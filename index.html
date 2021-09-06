@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BioHelper</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;1,200;1,400&display=swap" rel="stylesheet">
@@ -17,14 +17,28 @@
         <img class="img-logo" src="assets/dna-Logo.png" alt="Logo DNA">
     </header>
     <main>
-        <label class="label-1" for="inp-pct">Insira qnt. pacotes</label>
-        <input id="inp-pct" type="number" placeholder="????">
-        <input class="btn-send" type="button" value="Enviar">
+        <select id="sel">
+            <option id="alc" value="alcool">Álcool 99%</option>
+            <option value="filtroC">Filtro de Citologia</option>
+            <option value="laminas">Lâminas</option>
+            <option value="laminulas">Laminulas</option>
+            <option value="luvas">Luvas</option>
+        </select>
+        <input type="button" class="btn-add" value="+" onclick="createList()">
+
     </main>
 
+    <article>
+        <div class="column">
+        <ul></ul>
+        </div>
+    </article>
+
     <footer>
-        <p>BioHelper v. 0.1 - 2021 (Dedicado a melhor mulher do mundo &#128151)</p>
+        <p>BioHelper v. 0.5 - 2021 &#128151</p>
     </footer>
 
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
