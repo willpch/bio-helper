@@ -65,12 +65,17 @@ button {
     height: 20px;
     border: none;
     border-radius: 5px;
-    margin-left: 10px;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .delete {
     display: none;
+}
+
+#inp-num {
+    width: 55px;
+    margin: 0 10px;
 }
 
 footer p {
